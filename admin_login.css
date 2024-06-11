@@ -73,6 +73,6 @@ button:active {
 
 @media screen and (max-width:450px){
     .container {
-        width: 80%;
+        width: 75%;
     }
 }
