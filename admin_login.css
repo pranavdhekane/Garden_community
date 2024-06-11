@@ -63,3 +63,10 @@ button {
 button:active {
     border: 1px solid rgba(204, 255, 181, 0.626);
 }
+
+@media screen and (max-width:700px){
+    .container {
+        width: 60%;
+        padding: 5%;
+    }
+}
