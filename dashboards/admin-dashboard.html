@@ -4,25 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Admin DashBoard
+    </title>
     <link rel="stylesheet" href="admin-dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
 
 <body>
+    <header>
+        <h1>Admin DashBoard</h1>
+        <ul>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Logout</a></li>
+            <li><a href="#">
+                    <img src="" alt="">
+                </a></li>
+        </ul>
+    </header>
+
     <main>
         <div id="stats">
-            <div id="plot-updates"> 1</div>
-            <div id="gardener-updates">2</div>
-            <div id="resources">3</div>
+            <div id="updates">
+                <div class="numbers">
+                    <div class="font1">
+                        Plots
+                    </div>
+                    <div class="stat-font" id="plot-no">
+                        0
+                    </div>
+                    <a href="#">Manage</a>
+                </div>
+                <div class="numbers">
+                    <div class="font1">
+                        Garderners
+                    </div>
+                    <div class="stat-font" id="gardener-no">
+                        0
+                    </div>
+                    <a href="#">Manage</a>
+                </div>
+                <div class="numbers">
+                    <div class="font1">
+                        Users
+                    </div>
+                    <div class="stat-font" id="user-no">
+                        0
+                    </div>
+                    <a href="#">Manage</a>
+                </div>
+            </div>
+            <div id="resources">
+                <div class="font1">
+                    Resources
+                </div>
+
+                <canvas id="myChart"></canvas>
+                <script>
+                    var xValues = ["R1", "R2", "R3", "R4", "R5"];
+                    var yValues = [55, 40, 44, 24, 50];
+                    // var barColors = ["blue", "blue", "blue", "blue", "blue"];
+                    var barColors = "blue";
+
+                    new Chart("myChart", {
+                        type: "bar",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                                backgroundColor: barColors,
+                                data: yValues
+                            }]
+                        },
+                        options: {
+                            legend: { display: false },
+                            responsive: true,
+                            maintainAspectRatio: false
+                        }
+                    });
+                </script>
+
+                <a href="#">
+                    Manage
+                </a>
+            </div>
         </div>
-        <div id="updates">
-            <div id="notification">4</div>
-            <div id="quick-links">
-                <div id="user-link">5</div>
-                <div id="plot-link">6</div>
+        <div id="alerts">
+            <div class="notifications">
+                <div class="font1">
+                    Notifications
+                </div>
+                <ul>
+                    <li>Notification1</li>
+                    <li>Notification2</li>
+                    <li>Notification3</li>
+                    <li>Notification4</li>
+                    <li>Notification5</li>
+                    <li>Notification6</li>
+                    <li>Notification6</li>
+                    <li>Notification6</li>
+                    <li>Notification6</li>
+                    <li>Notification6</li>
+                    <li>Notification6</li>
+                    <li>Notification6</li>
+                    <li>Notification6</li>
+                    <li>Notification6</li>
+                    <li>Notification6</li>
+                    <li>Notification6</li>
+                    <li>Notification6</li>
+                    <li>Notification6</li>
+                    <li style="list-style-type: none;"><a href="#">View More</a></li>
+                </ul>
+                <a href="">Manage</a>
+            </div>
+            <div class="events">
+                <div class="font1">
+                    Events
+                </div>
+                <ul>
+                    <li>Notification1</li>
+                    <li>Notification2</li>
+                    <li>Notification3</li>
+                    <li>Notification4</li>
+                    <li>Notification5</li>
+                    <li>Notification6</li>
+                    <li style="list-style-type: none;"><a href="#">View More</a></li>
+                </ul>
+                <a href="">Manage</a>
             </div>
         </div>
     </main>
+
 </body>
 
 </html>

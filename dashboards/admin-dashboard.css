@@ -3,15 +3,145 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-div {
-    border: 1px solid black;
-}
-main {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
+
+/* Utility Classes */
+.font1 {
+    font-size: 2rem;
+    text-decoration: underline wavy;
 }
 
-#stats {
+.stat-font {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+}
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vw;
+    border: 1px solid black;
+    padding: 0 1vw;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header li {
+    list-style-type: none;
+    margin: 0 1vh;
+}
+
+header a {
+    color: black;
+}
+
+header img {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+
+/* main */
+main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 10fr 5fr;
+    padding: 2vw;
+    gap: 3vw;
+    border: 1px solid;
+}
+
+/* stats */
+#stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3vw;
+}
+
+/* updates */
+#updates {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.numbers {
+    border: 1px solid black;
+    padding: 1.5rem;
+    border-radius: 20px;
+    width: 12rem;
+}
+
+
+@media screen and (max-width : 700px) {
+    #updates {
+        flex-wrap: wrap;
+    }
+}
+
+/* resources */
+#resources {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+#myChart {
+    padding: 1rem;
+    min-height: 15rem;
+    max-height: 15rem;
+    max-width: 90%;
+    margin: 1rem;
+}
+
+/* alerts */
+#alerts{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    /* height: 100%; */
+}
+
+/* notifications */
+.notifications {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.notifications ul {
+    height: 10vw; /* Set your desired height */
+    overflow-y: auto; /* Add scroll if needed */
+    padding: 1vw 2vw;
+}
+/* Events */
+.events{
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.events ul{
+    padding: 1vw 2vw;
+    height: 10vw; /* Set your desired height */
+    overflow-y: auto; /* Add scroll if needed */
+}
+
+/* Responsive */
+@media screen and (max-width : 1100px){
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
