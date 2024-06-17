@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Utility Classes */
+.font1 {
+    font-size: 2rem;
+    text-decoration: underline wavy;
+}
+
+.stat-font {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+
+/* bacground styling */
+/* header {
+    background-color: #D2FF4C;
+}
+main {
+    background-color: #114232;
+}
+.numbers, #alerts>div, #resources{
+    background-color: #69C0FF;
+} */
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vw;
+    border: 1px solid black;
+    padding: 0 1vw;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header li {
+    list-style-type: none;
+    margin: 0 1vh;
+}
+
+header a {
+    color: black;
+}
+
+
+/* Collapsed Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: none;
+    display: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* main */
+main {
+    display: grid;
+    grid-template-columns: 10fr 5fr;
+    padding: 2vw;
+    gap: 3vw;
+    border: 1px solid;
+}
+
+/* stats */
+#stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3vw;
+}
+
+/* updates */
+#updates {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.numbers {
+    border: 1px solid black;
+    padding: 1.5rem;
+    border-radius: 20px;
+    width: 20rem;
+    /* height: 15rem; */
+}
+
+
+@media screen and (max-width : 700px) {
+    #updates {
+        flex-wrap: wrap;
+    }
+}
+
+/* resources */
+#resources {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+#myChart {
+    padding: 1rem;
+    min-height: 15rem;
+    max-height: 15rem;
+    max-width: 90%;
+    margin: 1rem;
+}
+
+/* alerts */
+
+
+/* notifications */
+.notifications {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.notifications ul {
+    height: 80vmin;
+    overflow-y: auto;
+    padding: 1vw 2vw;
+}
+
+/* Events */
+.events {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.events ul {
+    padding: 1vw 2vw;
+    height: 10vw;
+    /* Set your desired height */
+    overflow-y: auto;
+    /* Add scroll if needed */
+}
+
+/* Responsive */
+@media screen and (max-width : 1100px) {
+    header {
+        height: 11vw;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5vw;
+    }
+
+    .notifications ul {
+        height: 20vw;
+    }
+
+    .events ul {
+        height: 20vw;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    header ul {
+        display: none;
+    }
+
+    header .openbtn {
+        display: contents;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header {
+        height: 15vw;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .numbers {
+        width: 100%;
+    }
+
+    .notifications ul {
+        height: 35vw;
+    }
+
+    .events ul {
+        height: 35vw;
+    }
+}

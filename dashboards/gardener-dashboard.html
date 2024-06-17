@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin DashBoard
+    </title>
+    <link rel="stylesheet" href="gardener-dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">
+            <img src="" alt="">
+        </a>
+        <a href="#">About</a>
+        <a href="#">Help/FAQ</a>
+        <a href="#">Calendar</a>
+        <a href="#">Contact</a>
+        <a href="">Logout</a>
+    </div>
+    <header>
+        <h1>Garderners DashBoard</h1>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help/FAQ</a></li>
+            <li><a href="#">Logout</a></li>
+            <li>
+                <a href="#">
+                    <img src="" alt="">
+                </a>
+            </li>
+        </ul>
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </header>
+
+    <main>
+        <div id="stats">
+            <div id="updates">
+                <div class="events">
+                    <div class="font1">
+                        Events
+                    </div>
+                    <ul>
+                        <li>Notification1</li>
+                        <li>Notification2</li>
+                        <li>Notification3</li>
+                        <li>Notification4</li>
+                        <li>Notification5</li>
+                        <li>Notification6</li>
+                        <li style="list-style-type: none;"><a href="#">View More</a></li>
+                    </ul>
+                    <a href="">Manage</a>
+                </div>
+                <div class="numbers">
+                    <div class="font1">
+                        Assigned Plots
+                    </div>
+                    <div class="stat-font" id="plot-no">
+                        0
+                    </div>
+                    <a href="#">Manage</a>
+                </div>
+            </div>
+            <div id="resources">
+                <div class="font1">
+                    Resources
+                </div>
+
+                <canvas id="myChart"></canvas>
+
+                <a href="#">
+                    Manage
+                </a>
+            </div>
+        </div>
+        <div class="notifications">
+            <div class="font1">
+                Notifications
+            </div>
+            <ul>
+                <li>Notification1</li>
+                <li>Notification2</li>
+                <li>Notification3</li>
+                <li>Notification4</li>
+                <li>Notification5</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li>Notification6</li>
+                <li style="list-style-type: none;"><a href="#">View More</a></li>
+            </ul>
+            <a href="">Manage</a>
+        </div>
+    </main>
+
+    <script src="gardener-dashboard.js"></script>
+</body>
+
+</html>
