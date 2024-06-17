@@ -81,6 +81,11 @@ main {
     padding: 1.5rem;
     border-radius: 20px;
     width: 12rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 
@@ -140,8 +145,33 @@ main {
 
 /* Responsive */
 @media screen and (max-width : 1100px){
+    header {
+        height: 11vw;
+    }
     main {
         display: flex;
         flex-direction: column-reverse;
+        padding: 5vw;
+    }
+    .notifications ul {
+        height: 20vw;
+    }
+    .events ul {
+        height: 20vw;
+    }
+}
+
+@media screen and (max-width:500px){
+    header {
+        height: 15vw;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    .notifications ul {
+        height: 30vw;
+    }
+    .events ul {
+        height: 30vw;
     }
 }
