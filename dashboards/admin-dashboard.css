@@ -4,6 +4,25 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* bacground styling */
+header {
+    background-color: #D2FF4C;
+    background-color: white;
+}/*
+main {
+    background-color: #204d3e;
+    background-color: white;
+}*/
+.numbers, #alerts>div, #resources{
+    background-color: #69C0FF;
+    background-color: #fff;
+}
+body {
+    background-image: url(../images/dashboard.png);
+    background-size: contain;
+    background-attachment: fixed;
+}
+
 /* Utility Classes */
 .font1 {
     font-size: 2rem;
@@ -26,17 +45,7 @@ img {
     height: 3rem;
     width: 3rem;
 }
-
-/* bacground styling */
-/* header {
-    background-color: #D2FF4C;
-}
-main {
-    background-color: #114232;
-}
-.numbers, #alerts>div, #resources{
-    background-color: #69C0FF;
-} */
+ 
 /* header */
 header {
     display: flex;
