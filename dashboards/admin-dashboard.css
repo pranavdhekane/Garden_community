@@ -6,19 +6,16 @@
 
 /* bacground styling */
 header {
-    background-color: #D2FF4C;
     background-color: white;
 }/*
 main {
-    background-color: #204d3e;
     background-color: white;
 }*/
 .numbers, #alerts>div, #resources{
-    background-color: #69C0FF;
     background-color: #fff;
 }
 body {
-    background-image: url(../images/dashboard.png);
+    /* background-image: url(../images/dashboard.png); */
     background-size: contain;
     background-attachment: fixed;
 }
@@ -53,7 +50,7 @@ header {
     align-items: center;
     height: 5vw;
     border: 1px solid black;
-    padding: 0 1vw;
+    padding: 0 2vw;
 }
 
 header ul {
@@ -173,7 +170,7 @@ main {
 
 /* alerts */
 #alerts {
-    display: flex;
+    display: grid;
     flex-direction: column;
     gap: 3vw;
     /* height: 100%; */
@@ -209,6 +206,15 @@ main {
     /* Add scroll if needed */
 }
 
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    line-height: 3rem;
+    height: 3rem;
+}
 /* Responsive */
 @media screen and (max-width : 1100px) {
     header {
@@ -242,7 +248,7 @@ main {
 
 @media screen and (max-width:500px) {
     header {
-        height: 15vw;
+        height: 18vw;
     }
 
     header h1 {
@@ -254,10 +260,10 @@ main {
     }
 
     .notifications ul {
-        height: 35vw;
+        height: 50vw;
     }
 
     .events ul {
-        height: 35vw;
+        height: 50vw;
     }
 }
